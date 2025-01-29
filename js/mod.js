@@ -7,16 +7,16 @@ const goroadDesign = document.querySelector(".goroad-content");
 activeStart();
 
 function activeStart(){
-    freeBtn.classList.add("active-btn");
-    goroadDesign.classList.add("hidden");
+    gorBtn.classList.add("active-btn");
+    freeDesign.classList.add("hidden");
 }
 
 function activefreeBtn(){
     //cek apakah free btn mempunya class active btn, ! untuk melakukan sebaliknya, melihat freebtn tidak punya class active-btn
-    if (!freeBtn.classList.contains("active-btn")){
-        freeBtn.classList.add("active-btn");
-        gorBtn.classList.remove("active-btn");
-    }
+    // if (!freeBtn.classList.contains("active-btn")){
+    freeBtn.classList.add("active-btn");
+    gorBtn.classList.remove("active-btn");
+    
     acvtiveDesignFree();
 }
 

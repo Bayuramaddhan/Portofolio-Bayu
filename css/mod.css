@@ -72,7 +72,7 @@ a:not([href]):not([tabindex]):hover{
 
 @media (min-width: 1270px) {
     .item .project-info img{
-        height: 400px;
+        height: 450px;
         width: auto;
     }
     #cphoto{
@@ -85,25 +85,36 @@ a:not([href]):not([tabindex]):hover{
 }
 @media (max-width: 767px){
     .item .project-info img{
-        height: 300px;
+        height: 250px;
         width: auto;
+        display: flex;
+        margin: 0 auto;
     }
     #cphoto{
-        width: 200px;
+        width: 300px;
         height: auto;
+        display: flex;
+        margin: 0 auto;
     }
     .bg-black{
         background-color: var(--grey);
     }
 }
 @media (max-width: 580px){
+    .animated-info {
+        min-width: 240px;
+    }
     .item .project-info img{
-        height: 200px;
+        height: 270px;
         width: auto;
+        display: flex;
+        margin: 0 auto;
     }
     #cphoto{
-        width: 150px;
+        width: 280px;
         height: auto;
+        display: flex;
+        margin: 0 auto;
     }
     .bg-black{
         background-color: var(--grey);
