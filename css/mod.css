@@ -1,0 +1,51 @@
+*{
+    --bluemain : #0d8bd4;
+}
+.item .project-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .project-info img{
+    height: 500px;
+    width: auto;
+}
+
+.double-btn{
+    background: #eee;
+    color: #5b5b5b;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 13px 29px;
+    font-size: 14px;
+    line-height: normal;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    
+}
+.double-btn:hover{
+    background-color: var(--bluemain);
+    color: white;
+}
+
+.active-btn{
+    background-color: var(--bluemain);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+/* a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+a:not([href]):not([tabindex]):hover{
+    background-color: var(--bluemain);
+    color: inherit;
+} */
