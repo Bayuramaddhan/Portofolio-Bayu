@@ -320,15 +320,15 @@ https://www.tooplate.com/view/2115-marvel
               <form action="" id="contact-form" method="get">
                 <div class="row">
                   <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required>
                   </div>
 
                   <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email" required>
                   </div>
 
                   <div class="col-12">
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
                   </div>
 
                   <div class="ml-lg-auto col-lg-5 col-12">
@@ -336,6 +336,35 @@ https://www.tooplate.com/view/2115-marvel
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+
+
+          <!-- popup -->
+          <div class="popup" id="succes-popup">
+            <div class="popup-content">
+                <!-- <span class="close" id="closePopup">&times;</span> -->
+                <!-- <span class="material-symbols-sharp">
+                    assignment_turned_in
+                    </span> -->
+                <p>Email terkirim</p>
+                <p>Terima kasih telah menghubungi</p>
+                <button id="donebtn">
+                    <a href="#" onclick="okklik()">OK</a>
+                </button>
+            </div>
+          </div>
+          <div class="popup" id="failed-popup">
+            <div class="popup-content">
+                <!-- <span class="close" id="closePopup">&times;</span> -->
+                <!-- <span class="material-symbols-sharp">
+                    assignment_turned_in
+                    </span> -->
+                <p>Email belum terkirim</p>
+                <p>Silahkan coba lagi</p>
+                <button id="donebtn">
+                    <a href="#" onclick="okklik()">OK</a>
+                </button>
             </div>
           </div>
 
@@ -356,6 +385,7 @@ https://www.tooplate.com/view/2115-marvel
                </div>
           </div>
      </footer>
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -55,6 +55,62 @@
     background-color: var(--grey);
 }
 
+.popup {
+    display: none; /* Sembunyikan popup secara default */
+    position: fixed; /* Tetap di posisi tetap */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+    z-index: 1000; /* Pastikan popup berada di atas konten lainnya */
+}
+
+.popup-content{
+    background-color: white;
+    margin: 17% auto;
+    /*Posisikanditengah*/padding: 40px 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 350px;
+    /*Bataslebar*/text-align: center;
+    border-radius: 8px;
+    transition: 1s;
+    /*transform: scale(0);
+    */-webkit-transition: 0.5s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.popup-content span{
+    font-size: 3rem;
+    color: var(--blue);
+}
+.popup-content button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1rem;
+    margin-top: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.popup-content button a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+.popup p{
+    margin: 0;
+}
+
 
 /* .container{
     display: flex;

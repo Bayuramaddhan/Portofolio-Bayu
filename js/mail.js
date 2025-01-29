@@ -8,8 +8,23 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
     emailjs.sendForm('service_y532e0c', 'template_zcx7eh8', this)
         .then(function() {
-            alert('Email sent successfully!');
+            // alert('Email sent successfully!');
+            document.getElementById("succes-popup").style.display = 'block';
         }, function(error) {
-            alert('Failed to send email: ' + JSON.stringify(error));
+            // alert('Failed to send email: ' + JSON.stringify(error));
+            document.getElementById("failed-popup").style.display = 'block';
         });
 });
+
+// Menutup popup jika pengguna mengklik di luar popup
+window.onclick = function(event) {
+    const popup = document.querySelector('.popup');
+    if (event.target === popup) {
+        popup.style.display = 'none';
+    }
+}
+
+function okklik(){
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'none';
+}
