@@ -9,10 +9,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     emailjs.sendForm('service_y532e0c', 'template_zcx7eh8', this)
         .then(function() {
             // alert('Email sent successfully!');
-            document.getElementById("succes-popup").style.display = 'block';
+            document.getElementById("succes-popup").style.display = 'flex';
+            document.body.classList.add('no-scroll');
         }, function(error) {
             // alert('Failed to send email: ' + JSON.stringify(error));
-            document.getElementById("failed-popup").style.display = 'block';
+            document.getElementById("failed-popup").style.display = 'flex';
+            document.body.classList.add('no-scroll');
         });
 });
 
@@ -21,10 +23,12 @@ window.onclick = function(event) {
     const popup = document.querySelector('.popup');
     if (event.target === popup) {
         popup.style.display = 'none';
+        document.body.classList.remove('no-scroll');
     }
 }
 
 function okklik(){
     const popup = document.querySelector('.popup');
     popup.style.display = 'none';
+    document.body.classList.remove('no-scroll');
 }

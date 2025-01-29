@@ -68,7 +68,7 @@
 
 .popup-content{
     background-color: white;
-    margin: 17% auto;
+    margin: 15% auto;
     /*Posisikanditengah*/padding: 40px 20px;
     border: 1px solid #888;
     width: 80%;
@@ -109,6 +109,10 @@
 }
 .popup p{
     margin: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Mencegah scroll */
 }
 
 
@@ -154,6 +158,14 @@ a:not([href]):not([tabindex]):hover{
     }
     .bg-black{
         background-color: var(--grey);
+    }
+    .popup{
+        /* display: block; */
+        margin: auto;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
     }
 }
 @media (max-width: 580px){
